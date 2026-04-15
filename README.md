@@ -56,3 +56,37 @@ result = sampler.run([qc]).result()
 
 counts = result[0].data.meas.get_counts()
 print(counts)
+```
+
+## Sample Output
+
+```{'00': ~50%, '11': ~50%}```
+
+## 📊 Key Concepts Covered
+- Superposition and Entanglement
+- Quantum Interference
+- Oracle-based computation
+- Amplitude amplification (Grover)
+- Phase estimation techniques
+- Parameterized quantum circuits
+- Measurement statistics and probabilistic outputs
+
+## ⚠️ Important Notes
+- Some algorithms (Shor, HHL, QAOA, VQE, VQC) are implemented as conceptual or minimal versions to demonstrate structure.
+- Variational algorithms currently do not include full optimization loops.
+- Results are obtained via statevector simulation, not real hardware.
+
+## 🧠 Learning Outcomes
+This project demonstrates:
+- Building and visualizing quantum circuits using Qiskit 2.x
+- Using modern primitives (StatevectorSampler, Estimator)
+- Understanding probabilistic quantum measurements
+- Debugging real-world quantum environments
+- Translating theoretical algorithms into working implementations
+
+## 🔮 Future Improvements
+- Implement full VQE optimization loop
+- Add QAOA with cost function + classical optimizer
+- Build a complete Quantum Machine Learning (VQC) pipeline
+- Execute circuits on real IBM Quantum hardware
+- Add probability distribution visualizations
